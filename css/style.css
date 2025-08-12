@@ -95,35 +95,6 @@ footer {
 -------------------------- */
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
-        text-align: center;
-        gap: 5px;
-    }
-
-    header img {
-        width: 10rem;
-    }
-
-    header span {
-        font-size: 18px;
-    }
-
-    .carousel-container {
-        width: 100%;
-        padding: 0 10px;
-    }
-
-    .carousel-container iframe {
-        height: 500px; /* Más bajo para móviles */
-    }
-
-    main {
-        padding: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    header {
     align-items: center;
     gap: 5px;
     padding: 0px;
