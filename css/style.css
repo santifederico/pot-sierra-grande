@@ -46,6 +46,10 @@ h2 {
     margin: 10px;
 }
 
+#imagen {
+display: none; /* Muestra la imagen */
+}
+
 /* Carrusel / PDF */
 .carousel-container {
     display: flex;
@@ -133,6 +137,13 @@ footer {
         font-size: 10px;
         margin-bottom: 5px;
     }
+    
+    #carrusel {
+    display: none; /* Oculta el carrusel */
+    }
+    #imagen {
+    display: block; /* Muestra la imagen */
+    }
 
     .carousel-container iframe {
         height: 400px;
@@ -141,7 +152,7 @@ footer {
     button {
         width: 100%;
         padding: 12px;
-        font-size: 14px;
+        font-size: 12px;
     }
     footer {
     font-size: 10px;
