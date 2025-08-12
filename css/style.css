@@ -97,16 +97,23 @@ footer {
     header {
     align-items: center;
     gap: 5px;
-    padding: 0px;
+    padding: 5px;
     }
 
     header img {
-        width: 8rem;
+        width: 6rem;
     }
 
     header span {
-        font-size: 10px;
+        font-size: 12px;
         margin-bottom: 5px;
+    }
+    
+    h2 {
+    font-size: 18px;
+    font-weight: 200;
+    padding-left: 20px;
+    margin: 10px;
     }
     
     #carrusel {
@@ -116,13 +123,13 @@ footer {
     display: block; /* Muestra la imagen */
     }
 
-    .carousel-container iframe {
-        height: 400px;
+    .imagen-container img {
+        margin-bottom: 5px;
     }
 
     button {
         width: 100%;
-        padding: 12px;
+        padding: 5px;
         font-size: 12px;
     }
     footer {
