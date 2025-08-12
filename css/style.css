@@ -9,24 +9,27 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    text-align: center; /* Centra el texto y elementos inline */
+    text-align: center;
 }
 
 /* Header */
 header {
     display: flex;
-    align-items: baseline;      /* Centra verticalmente logo y texto */
-    justify-content: center;  /* Centra horizontalmente todo el grupo */
-    gap: 10px;                 /* Espacio entre logo y texto */
+    background-color: #2e5c60;
+    align-items: baseline;
+    justify-content: center;
+    gap: 10px;
     padding: 15px;
+    flex-wrap: wrap; /* Permite que logo y texto bajen en pantallas pequeñas */
 }
 
 header img {
-    max-height: auto;  /* Ajusta el alto del logo */
     width: 13rem;
+    height: auto;
 }
 
 header span {
+    color: #ffffff;
     font-size: 26px;
     font-weight: 300;
 }
@@ -41,8 +44,8 @@ main {
     display: flex;
     justify-content: center;
     margin: 20px auto;
-    width: 70%; /* mismo ancho que el iframe */
-    max-width: 1000px; /* opcional, por si quieres limitarlo */
+    width: 70%;
+    max-width: 1000px;
 }
 
 .carousel-container iframe {
@@ -55,7 +58,7 @@ main {
 button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #0077cc;
+    background-color: #d8c8a8;
     color: white;
     border: none;
     border-radius: 5px;
@@ -73,4 +76,63 @@ footer {
     color: white;
     padding: 15px;
     margin-top: 30px;
+}
+
+/* -------------------------
+   Responsive para móviles
+-------------------------- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
+    header img {
+        width: 10rem;
+    }
+
+    header span {
+        font-size: 18px;
+    }
+
+    .carousel-container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .carousel-container iframe {
+        height: 500px; /* Más bajo para móviles */
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+    align-items: center;
+    gap: 5px;
+    padding: 0px;
+    }
+
+    header img {
+        width: 8rem;
+    }
+
+    header span {
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+
+    .carousel-container iframe {
+        height: 400px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
 }
