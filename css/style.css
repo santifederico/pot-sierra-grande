@@ -16,7 +16,7 @@ body {
 header {
     display: flex;
     background-color: #2e5c60;
-    align-items: baseline;
+    align-items: center;
     justify-content: center;
     gap: 10px;
     padding: 15px;
@@ -24,7 +24,7 @@ header {
 }
 
 header img {
-    width: 13rem;
+    width: 9rem;
     height: auto;
 }
 
@@ -37,6 +37,13 @@ header span {
 /* Main */
 main {
     padding: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 200;
+    padding-left: 20px;
+    margin: 10px;
 }
 
 /* Carrusel / PDF */
